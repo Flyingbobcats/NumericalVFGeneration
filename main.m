@@ -14,13 +14,13 @@ L = 0;
 dt = 0.1;
 
 
-% theta = 0:0.05:2*pi;
-% r = .1;
-% 
-% x = [r*cos(theta),0];
-% y = [r*sin(theta),0];
-% z = zeros(1,length(x)-1);
-% z = [z,10];
+theta = 0:0.05:2*pi;
+r = .1;
+
+x = [r*cos(theta),0];
+y = [r*sin(theta),0];
+z = zeros(1,length(x)-1);
+z = [z,10];
 
 %Ellipse
 % a=5; % horizontal radius
@@ -51,26 +51,26 @@ dt = 0.1;
 % z = [zeros(1,length(x)-1),1];
 
 %Get Points
-fig = figure;
-axis([-10,10,-10,10]);
-grid on
-[x,y] = getpts(fig);
-
-% x = [x',0];
-% y = [y',0];
-% z = [0,-1];
-
-x = [x'];
-y = [y'];
-z = [0,-100];
-z = repmat(z,1,length(x)/2);
-
-
-x = [x,0];
-y = [y,0];
-z = [z,100];
-
-
+% fig = figure;
+% axis([-10,10,-10,10]);
+% grid on
+% [x,y] = getpts(fig);
+% 
+% % x = [x',0];
+% % y = [y',0];
+% % z = [0,-1];
+% 
+% x = [x'];
+% y = [y'];
+% z = [0,-100];
+% z = repmat(z,1,length(x)/2);
+% 
+% 
+% x = [x,0];
+% y = [y,0];
+% z = [z,100];
+% 
+% 
 xy = [x;y];
 
 hold on
